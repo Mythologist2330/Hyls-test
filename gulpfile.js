@@ -49,7 +49,7 @@ function scripts() {
 
 }
 
-function clean (done) {
+function clean () {
     return del(['build/*'])
 }
 
@@ -57,6 +57,5 @@ gulp.task('scripts', scripts);
 gulp.task('sass', sass);
 gulp.task('watch', watch);
 gulp.task('clean', clean);
-gulp.task('build', gulp.series(clean, scripts));
+gulp.task('build', gulp.series(scripts, sass));
 gulp.task('dev', gulp.series('build', 'watch'));
-

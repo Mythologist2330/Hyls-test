@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
     <title>HYLS | Test</title>
-	
-	<p>Проверка....</p>
-	
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/style.css">
-    <script src="build/js/script.js"></script>
+    <link rel="stylesheet" href="build/css/font-awesome.min.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="build/js/script.js" defer></script>
 </head>
 <body>
-<h1>Новый проект</h1>
-<h2>Пока пустой</h2>
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-check" aria-hidden="true"></i><span>Практика</span></a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-star-o" aria-hidden="true"></i><span>Статистика</span></a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h1>Страница 1</h1>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolorem, doloribus expedita fugit impedit in iusto magni minus natus nesciunt nihil nisi, quod rem sapiente sequi sit temporibus velit voluptate.</span><span>Alias aliquid animi assumenda atque, blanditiis corporis culpa deleniti dolorem earum enim esse harum iste laboriosam minima modi nam necessitatibus neque quasi quibusdam quisquam recusandae reiciendis ut voluptas voluptates voluptatum.</span><span>Alias aspernatur, atque autem beatae culpa eligendi eum explicabo incidunt minus officiis optio quia quidem reprehenderit repudiandae vel. Deserunt enim facere fugiat iusto minima nam odit. Architecto deleniti perferendis ratione.</span><span>Accusamus, accusantium asperiores commodi cupiditate excepturi fugiat hic id impedit iste laboriosam libero mollitia necessitatibus quis soluta voluptatem? Accusantium delectus dolores enim facere, neque nulla quod rem sequi totam voluptas?</span><span>Consectetur debitis exercitationem minus qui repudiandae? Amet architecto enim, error explicabo nostrum numquam perferendis quos reprehenderit soluta veritatis! Aliquam explicabo fugit, libero minus nobis optio quam! Aut id magnam tenetur.</span><span>Ab aliquam aperiam assumenda aut commodi corporis cumque dolor doloremque ex exercitationem illum inventore ipsum iure nesciunt non officia perferendis porro, quam quas quia rem repudiandae sit velit! Blanditiis, laborum.</span><span>Ab asperiores blanditiis, consectetur cumque debitis dolore est explicabo facere labore natus nihil nisi nobis omnis quis quo rem repudiandae ullam vel! Aliquid autem consequatur expedita facere provident rem, repellat.</span><span>Aliquid animi asperiores corporis deleniti distinctio dolores error esse explicabo fuga iure iusto laborum laudantium minima nesciunt non perferendis quae quaerat quam quod sit tempore, temporibus vel velit voluptate voluptates!</span><span>Consectetur culpa eaque explicabo facere illo laboriosam magnam rem sunt suscipit voluptatum? Distinctio excepturi, in inventore ipsa iure minus neque odio omnis possimus reprehenderit sit, sunt tempora ut, vero voluptatibus.</span><span>A accusamus at aut commodi consectetur culpa cupiditate eaque eos est eveniet, harum itaque iusto laboriosam molestias necessitatibus nihil numquam quaerat quasi quisquam recusandae sit soluta ullam ut. Dolores, nemo!</span></p>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h1>Страница 2</h1>
+            <p>Текст, текст, текст</p>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h1>Страница 3</h1>
+            <p>Текст, текст, текст</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

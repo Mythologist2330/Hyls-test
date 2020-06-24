@@ -1,3 +1,42 @@
-h1 {
-  color: blue;
+nav {
+  height: 63px;
 }
+.nav-tabs {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-bottom: 3px solid #dee2e6;
+  font-weight: bold;
+  .nav-item {
+    margin-bottom: -3px;
+  }
+  .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 3px solid #dee2e6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #999;
+    width: 40%;
+    &:nth-child(3){
+      width: 20%;
+      .fa {
+        font-size: 30px;
+      }
+    }
+    span{
+      margin-left: 10px;
+    }
+    .fa {
+      font-size: 22px;
+    }
+    &.active{
+      border-color: #ffffff #ffffff green;
+      color: #000;
+    }
+  }
+}
+
