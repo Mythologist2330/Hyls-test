@@ -1,8 +1,13 @@
+body{
+  background: #f6f6f6;
+}
+
 nav {
   height: 63px;
 }
 nav .nav-tabs {
   position: fixed;
+  z-index: 999;
   width: 100%;
   background: #fff;
   border: none;
@@ -103,4 +108,102 @@ ul.nav.nav-tabs {
   padding: 15px;
   border-top: 2px solid #999;
   background: #fff;
+}
+
+.video-mainBlock{
+  padding: 0 0 44px 0;
+
+  .video-block{
+    position: relative;
+    .abso-wind{
+      padding: 2px 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 0 10px 0 10px;
+      background-color: #dee2e6;
+      color: #fff;
+      font-size: 0.7rem;
+      line-height: 14px;
+    }
+    box-shadow:1px 1px 15px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+}
+
+.block-pretty-description{
+  width: 100%;
+  margin: 30px 0;
+  padding: 10px 0;
+  background-color: #F2F3F3;
+  box-shadow:1px 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+.pretty-description{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.scale-days{
+  margin: 0 0 6px 0;
+  span{
+    font-weight: 700;
+  }
+}
+
+.block-progress-scale{
+  display: flex;
+  align-items: center;
+  .progress-scale{
+    width: 100%;
+    height: 26px;
+    border-radius: 5px;
+    &::-webkit-progress-bar {
+      height: 26px;
+      border-radius: 5px;
+    }
+    &::-webkit-progress-value {
+      height: 26px;
+      border-radius: 5px;
+    }
+    &::-moz-progress-bar {
+      height: 26px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.wrap-block-count-days{
+  height: 116px;
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .block-count-days{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow:1px 1px 10px 1px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .count-days{
+      margin: 0 10px;
+    }
+  }
+}
+
+.block-images-circle{
+  display: flex;
+  justify-content: space-between;
+  .smile{
+    width: 30%;
+    height: 30%;
+  }
 }
