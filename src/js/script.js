@@ -40,11 +40,12 @@ tgSwitch2.onclick = () => {
 (function(){
     let allFrontDays = document.getElementsByClassName('front-week-day');
     for (let elem of allFrontDays){
-        console.log(elem);
-        elem.addEventListener('click', () => {
-            elem.style.color = '#000';
-            elem.style.borderColor = 'green';
-            elem.setAttribute('checked', 'checked');
-        })
+    elem.addEventListener('click', toggleDay)
+    }
+    function toggleDay() {
+    console.log(this);
+    this.style.color = '#000';
+    this.style.borderColor = 'green';
+    this.setAttribute('checked', 'checked');
     }
 }());
