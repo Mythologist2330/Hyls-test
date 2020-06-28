@@ -35,11 +35,16 @@ tgSwitch2.onclick = () => {
 
 
 
-let allFrontDays = document.getElementsByClassName('front-week-day')
-let allInputDays = document.getElementsByClassName('input-week-day')
+/* IIFE - самовызывающаяся функция. Скрывает переменные из глобальной области видимости. */
 
-allFrontDays[0].onclick = () => {
-    allFrontDays[0].style.color = '#000'
-    allFrontDays[0].style.borderColor = 'green'
-    allInputDays[0].setAttribute('checked', 'checked')
-}
+(function(){
+    let allFrontDays = document.getElementsByClassName('front-week-day');
+    for (let elem of allFrontDays){
+        console.log(elem);
+        elem.addEventListener('click', () => {
+            elem.style.color = '#000';
+            elem.style.borderColor = 'green';
+            elem.setAttribute('checked', 'checked');
+        })
+    }
+}());
