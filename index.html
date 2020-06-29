@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/style.css">
     <link rel="stylesheet" href="build/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" defer></script>
     <script src="build/js/script.js" defer></script>
     <link rel="icon" href="data:;base64,=">
 </head>
@@ -151,6 +154,15 @@
                         </div>
                     </div>
                 </div>
+                <form>
+                        <select id="flip-1" name="flip-1" data-role="slider">
+                            <option value="off">Отметить практику</option>
+                            <option value="on">Отменить практику</option>
+                        </select>
+                </form>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><h3>Информация для продолжающих</h3></div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><h3>Информация для продвинутых</h3></div>
             </div>
         </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -176,9 +188,9 @@
             <p class="pretty-description">Асаны - Достижения</p>
 
             <div class="block-images-circle">
-                <img src="images/smile.png" class="smile">
-                <img src="images/smile.png" class="smile">
-                <img src="images/smile.png" class="smile">
+                <img src="images/smile.png" class="smile" alt="">
+                <img src="images/smile.png" class="smile" alt="">
+                <img src="images/smile.png" class="smile" alt="">
             </div>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
@@ -203,7 +215,7 @@
 
             <p class="comlete-practicing-text">Дни для выполнения практики</p>
             <hr class="hr-in-settings">
-            
+
             <div class="block-practicing-days">
                 <p class="practicing-days">Практика каждый день</p>
 

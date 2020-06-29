@@ -30,7 +30,7 @@ tgSwitch2.onclick = () => {
         slider2.style.borderColor = '#C4C9CB'
         tgSwitchInput2.removeAttribute('checked')
     }
-}
+};
 
 
 

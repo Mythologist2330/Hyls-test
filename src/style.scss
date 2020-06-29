@@ -73,6 +73,7 @@ footer {
 }
 .container {
   background: #f6f6f6;
+  margin-bottom: 60px;
   // height: calc(100vh - 63px); /* 63px - высота меню */
 }
 ul.nav.nav-tabs {
@@ -111,7 +112,8 @@ ul.nav.nav-tabs {
 }
 
 .video-mainBlock{
-  padding: 0 0 60px 0;
+  padding: 0;
+
   .video-block{
     position: relative;
     display: flex;
@@ -320,4 +322,35 @@ ul.nav.nav-tabs {
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+
+//ui-slider ui-slider-switch ui-slider-track ui-shadow-inset ui-bar-inherit ui-corner-all
+
+.ui-slider.ui-slider-switch.ui-slider-track.ui-shadow-inset.ui-bar-inherit.ui-corner-all {
+  width: 100%;
+  border-radius: 2em;
+  height: 58px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  span {
+    &.ui-slider-label.ui-slider-label-a.ui-btn-active {
+      background-color: #00a50b;
+    }
+    line-height: 48px;
+    text-transform: uppercase;
+    text-shadow: none;
+  }
+  div.ui-slider-inneroffset {
+    margin: 0 32px 0 16px;
+    a.ui-slider-handle.ui-btn.ui-shadow {
+      width: 46px;
+      height: 46px;
+      box-shadow: none;
+      &.ui-slider-handle-snapping {
+        box-shadow: none;
+      }
+    }
+  }
+
 }
