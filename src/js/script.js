@@ -1,14 +1,9 @@
 (function(){
 
-let tgSwitch = document.getElementById('tgSwitch');
-let slider = document.getElementById('slider');
-let tgSwitchInput = document.getElementById('tgSwitchInput');
-
-
-/* tgSwitch и tgSwitch2 объединить в одну функцию */
+/* tgSwitch и tgSwitch2 объединить в одну функцию 
 tgSwitch.onclick = () => {
     if (tgSwitch.className === 'tgSwitch-practicing-days') {
-        tgSwitch.className += ' active';  /* строки 11-13 Добавить стиль "active" и менять по команде classlist.toggle  */
+        tgSwitch.className += ' active';  /* строки 11-13 Добавить стиль "active" и менять по команде classlist.toggle  
         slider.style.transform = 'translateX(30px)';
         slider.style.borderColor = 'green';
         tgSwitchInput.setAttribute('checked', 'checked')
@@ -35,7 +30,39 @@ tgSwitch2.onclick = () => {
         slider2.style.borderColor = '#C4C9CB';
         tgSwitchInput2.removeAttribute('checked')
     }
-};
+};*/
+
+
+
+
+    let tgSwitch = document.getElementsByClassName('tgSwitch-practicing-days');
+    let slider = document.getElementsByClassName('slider-practicing-days');
+    let tgSwitchInput = document.getElementsByClassName('tg-switch-input');
+
+    for (let tgSwitchElem of tgSwitch) {
+        tgSwitchElem.addEventListener('click', toggleSwitch)
+    }
+
+    function toggleSwitch() {
+        if (this.className === 'tgSwitch-practicing-days') {
+            this.className += ' active'
+            this.firstElementChild += ' slider-active'
+            this.firstChild.lastElementChild.setAttribute('checked', 'checked')
+        } else {
+            this.className = 'tgSwitch-practicing-days'
+            this.firstElementChild = 'slider-practicing-days'
+            this.lastElementChild.removeAttribute('checked')
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 
 

@@ -233,6 +233,7 @@ ul.nav.nav-tabs {
 
   .practicing-days, .toggle-practicing-days, .scale-practicing-days{
     margin: 0 10px;
+    width: 62%;
   }
   .br-spd{
     width: 90px;
@@ -267,6 +268,10 @@ ul.nav.nav-tabs {
     height: 30px;
     transition: .3s;
     box-shadow:1px 1px 10px 1px rgba(0,0,0,0.1);
+    &.slider-active{
+      transform: rotateX(30px);
+      border-color: green;
+    }
   }
   input{
     display: none;
@@ -324,6 +329,12 @@ ul.nav.nav-tabs {
   text-transform: uppercase;
 }
 
+.form-with-swiper{
+  position: fixed;
+  bottom: 70px;
+  left: 5%;
+  width: 90%;
+}
 
 //ui-slider ui-slider-switch ui-slider-track ui-shadow-inset ui-bar-inherit ui-corner-all
 
@@ -352,5 +363,4 @@ ul.nav.nav-tabs {
       }
     }
   }
-
 }
