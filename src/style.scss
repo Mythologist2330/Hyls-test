@@ -269,7 +269,7 @@ ul.nav.nav-tabs {
     transition: .3s;
     box-shadow:1px 1px 10px 1px rgba(0,0,0,0.1);
     &.slider-active{
-      transform: rotateX(30px);
+      transform: translateX(30px);
       border-color: green;
     }
   }
