@@ -43,9 +43,12 @@ tgSwitch2.onclick = () => {
     elem.addEventListener('click', toggleDay)
     }
     function toggleDay() {
-    console.log(this);
-    this.style.color = '#000';
-    this.style.borderColor = 'green';
-    this.setAttribute('checked', 'checked');
+        if (this.className === 'front-week-day') {
+            this.className += ' active-week-days'
+            this.nextElementSibling.setAttribute('checked', 'checked')
+        } else {
+            this.className = 'front-week-day'
+            this.nextElementSibling.removeAttribute('checked')
+        }
     }
 }());
